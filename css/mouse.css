@@ -1,0 +1,6 @@
+* {
+  cursor: url(https://cdn.jsdelivr.net/gh/YlovexLN/YlovexLNjsDelivrcdn@latest/images/default.cur), default !important;
+}
+a, img {
+  cursor: url(https://cdn.jsdelivr.net/gh/YlovexLN/YlovexLNjsDelivrcdn@latest/images/pointer.cur), pointer  !important;
+}
