@@ -1,0 +1,131 @@
+    .menu {
+        text-align: center;
+        /*让div内部文字居中*/
+        border-radius: 20px;
+        width: 90%;
+        height: 150px;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+        margin-left: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .dh {
+        text-align: center;
+        /*让div内部文字居中*/
+        border-radius: 20px;
+        width: 90%;
+        height: 40px;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: 120px;
+        margin-left: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .dhl {
+        text-align: center;
+        /*让div内部文字居中*/
+        border-radius: 20px;
+        width: 80%;
+        height: 40px;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: 12%;
+        margin-left: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    ul {
+        position: relative;
+        display: flex;
+    }
+    
+    ul li {
+        position: relative;
+        list-style: none;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        cursor: pointer;
+        text-shadow: 5px 5px 5px #5e5e5e;
+        transition: 0.5s;
+        transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+    }
+    
+    ul li:hover {
+        transition: 0.5s;
+        transform: scale(1.2) rotate(9deg);
+        -moz-transform: scale(1.2) rotate(9deg);
+        -webkit-transform: scale(1.2) rotate(9deg);
+        -ms-transform: scale(1.2) rotate(9deg);
+    }
+    
+    ul li a {
+        text-decoration: none;
+    }
+    
+    ul li a .fas {
+        text-align: center;
+        font-size: 3.5em;
+        color: #000;
+        transition: 0.5s;
+        transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+    }
+    
+    ul li a .fas:hover {
+        color: rgb(255, 112, 112);
+        transition: 0.5s;
+        transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+    }
+    
+    ul li::before {
+        text-align: center;
+        font-family: fontAwesome;
+        top: 0;
+        left: 0;
+        height: 0;
+    }
+    
+    @media screen and (max-width:1024px) {
+        .menu {
+            height: 150px;
+            font-size: 2em;
+        }
+    }
+    
+    @media screen and (max-width:900px) {
+        .menu {
+            height: 30%;
+            margin-bottom: 40px;
+        }
+        ul li a .fas {
+            font-size: 20px;
+        }
+        ul li::before {
+            font-size: .9em;
+        }
+    }

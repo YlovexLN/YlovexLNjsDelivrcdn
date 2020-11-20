@@ -1,0 +1,346 @@
+.find .links .item:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+    -webkit-animation: index-link-active 1s cubic-bezier(.315, .605, .375, .925) forwards
+}
+
+.find .links .item .inner {
+    position: relative;
+    z-index: 5
+}
+
+.find .links .item .bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.8%;
+    z-index: 0;
+    transition: all .15s
+}
+
+.find .links .item:hover .bg {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .28)
+}
+
+.find .links .item i {
+    font-size: 20px
+}
+
+.find .links .item span {
+    display: inline-block;
+    width: 100px
+}
+
+.find .links .col-3 .item {
+    width: 30.93%;
+    margin: 10px 1.2%
+}
+
+.ch {
+    width: 100%;
+    animation: fadedown 1s cubic-bezier(.19, 1, .22, 1);
+    -webkit-animation: fadedown 1s cubic-bezier(.19, 1, .22, 1);
+    -ms-animation: fadedown 1s cubic-bezier(.19, 1, .22, 1);
+    -moz-animation: fadedown 1s cubic-bezier(.19, 1, .22, 1)
+}
+
+.ch h2.chtitle {
+    padding-bottom: 30px;
+    font-size: 26px;
+    letter-spacing: .2em;
+    color: hsla(0, 0%, 100%, .5)
+}
+
+.ch h2.chtitle span {
+    color: #fff
+}
+
+.ch h2.chtitle:after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 5px;
+    background-color: hsla(0, 0%, 100%, .5);
+    margin-top: 30px
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.intro {
+    color: #fff;
+    height: 100vh;
+    padding: 0
+}
+
+.intro .container {
+    animation: fadedown 3.5s cubic-bezier(.19, 1, .22, 1);
+    -webkit-animation: fadedown 3.5s cubic-bezier(.19, 1, .22, 1);
+    -ms-animation: fadedown 3.5s cubic-bezier(.19, 1, .22, 1);
+    -moz-animation: fadedown 3.5s cubic-bezier(.19, 1, .22, 1)
+}
+
+
+/*links*/
+
+.links a {
+    color: #000;
+    text-decoration: none
+}
+
+
+/*框架大小*/
+
+.find .links .item {
+    position: relative;
+    width: 9%;
+    height: 80px;
+    line-height: 80px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    float: left;
+    transition: all .2s;
+    opacity: .9
+}
+
+.find .links .item:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+    -webkit-animation: index-link-active 1s cubic-bezier(.315, .605, .375, .925) forwards
+}
+
+.find .links .item .inner {
+    position: relative;
+    z-index: 5
+}
+
+.find .links .item .bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.8%;
+    z-index: 0;
+    transition: all .15s
+}
+
+.find .links .item:hover .bg {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .28)
+}
+
+.find .links .item i {
+    font-size: 20px
+}
+
+.find .links .item span {
+    display: inline-block;
+    width: 60%
+}
+
+.find .links .col-3 .item {
+    width: 30.93%;
+    margin: 10px 1.2%
+}
+
+.gate .links .item {
+    margin: 5px 0;
+    padding: 15px 1.5%;
+    float: left;
+    width: 22%;
+    height: 60px;
+    transition: all .2s;
+    opacity: .85
+}
+
+.gate .links .item.akarin {
+    opacity: .58
+}
+
+.gate .links .item:hover {
+    opacity: 1;
+    border-radius: 5px;
+    background-color: hsla(0, 0%, 100%, .25);
+    transform: translateY(-5px);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .28);
+    -webkit-animation: index-link-active 1s cubic-bezier(.315, .605, .375, .925) forwards
+}
+
+.gate .links .item .avatar {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 15px;
+    background-color: #353535;
+    overflow: hidden
+}
+
+.gate .links .item .avatar i {
+    font-size: 24px
+}
+
+.gate .links .item .avatar img {
+    height: 60px;
+    max-width: 60px;
+    border-radius: 100%
+}
+
+.gate .links .item .inner {
+    padding: 6px
+}
+
+.gate .links .item .inner h5 {
+    font-weight: 400;
+    font-size: 17px
+}
+
+.gate .links .item .inner p {
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, .6)
+}
+
+
+/*clear*/
+
+.clear:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+@media screen and (max-width:700px) {
+    body,
+    html {
+        min-width: 0
+    }
+    .container {
+        width: auto;
+        margin: 0 5%
+    }
+    div.el span {
+        display: block;
+        width: 60%;
+        left: 0;
+        top: 75px;
+        margin: -40% auto 0
+    }
+    nav {
+        padding: 15px 5%;
+        overflow: auto;
+        font-size: 13px;
+        left: 0;
+        top: inherit;
+        bottom: 0;
+        transform: rotate(0deg) translateZ(0);
+        transform-origin: 0 100%;
+        white-space: nowrap;
+        width: 90%;
+        background: -webkit-linear-gradient(180deg, transparent, rgba(0, 0, 0, .8));
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .8))
+    }
+    .ch {
+        padding: 40px 0
+    }
+    .hello {
+        width: 90%;
+        padding: 5%;
+        text-align: center;
+        bottom: 50%
+    }
+    .hello .circle {
+        float: none;
+        margin-right: 0
+    }
+    .hello h2 {
+        padding-top: 0
+    }
+    .hello h1,
+    .hello h2 {
+        font-weight: 400;
+        font-size: 14px
+    }
+    .hello .circle {
+        padding: 20px
+    }
+    .hello .circle span {
+        margin: 0 5px;
+        width: 10px;
+        height: 10px
+    }
+    .hello h1 {
+        font-size: 26px
+    }
+    .about .introduct img.avatar {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100px
+    }
+    .about .introduct,
+    .about .skill {
+        float: none;
+        width: auto
+    }
+    .about .skill {
+        padding-top: 40px
+    }
+    .about ul.skill li {
+        width: 100%
+    }
+    .find .links .item,
+    .gate .links .item {
+        width: 46%;
+        height: auto;
+        padding: 5px 0;
+        margin: 10px 2%
+    }
+    .find .links .item {
+        height: 60px;
+        line-height: 60px;
+        font-size: 13px
+    }
+    .gate .links .item .avatar {
+        height: 40px;
+        line-height: 40px;
+        width: 40px
+    }
+    .gate .links .item .avatar img {
+        height: 40px;
+        max-width: 40px
+    }
+    .gate .links .item .inner {
+        padding: 0
+    }
+    .gate .links .item .inner h5 {
+        font-size: 15px
+    }
+    .gate .links .item .inner h5,
+    .gate .links .item .inner p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden
+    }
+    .footer {
+        padding-bottom: 100px
+    }
+    .footer h3,
+    .footer p {
+        letter-spacing: .2em
+    }
+}

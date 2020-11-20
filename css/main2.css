@@ -1,0 +1,205 @@
+@charset "utf-8";
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'VarelaRound';
+    src: url("/fonts/VarelaRound-Regular.ttf");
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #e58a8a;
+    text-decoration: none;
+}
+
+body {
+    font-size: 11pt;
+    font-weight: normal;
+    line-height: 2em;
+    background-color: #fff;
+    color: #fff;
+    font-family: VarelaRound;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+}
+
+.kj {
+    text-align: center;
+    /*让div内部文字居中*/
+    background-color: #fff;
+    border-radius: 20px;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.avatar {
+    /* 头像大小 */
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    /*放大*/
+    transition: 0.5s;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+.avatar img {
+    /*阴影*/
+    box-shadow: #ccc 0px 8px 5px;
+    /*头像边框大小 颜色*/
+    border: 5px solid #f88585;
+    border-radius: 50%;
+}
+
+.avatar:hover {
+    /*放大*/
+    transition: 0.5s;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ios {
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+    letter-spacing: 0
+}
+
+.ios span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-right: 5px
+}
+
+.ios span:first-child {
+    background-color: #ff493f
+}
+
+.ios span:nth-child(2) {
+    background-color: #f7c900
+}
+
+.ios span:nth-child(3) {
+    background-color: #00ff37
+}
+
+.title {
+    width: 80%;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: #000;
+    /*字体阴影*/
+    text-shadow: 5px 5px 5px #5e5e5e;
+    font-size: 14pt;
+    /*放大*/
+    transition: 1s;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+.title :hover {
+    transition: 1s;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.description {
+    width: 40%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #000;
+    font-size: 12pt;
+    line-height: 2em;
+    text-shadow: 5px 5px 5px #5e5e5e;
+    transition: 1s;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+.description :hover {
+    transition: 1s;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+@media screen and (max-width:1024px) {
+    .kj {
+        width: 600px;
+        height: 600px;
+    }
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+    .title {
+        font-size: 14pt;
+    }
+    .description {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .kj {
+        width: 90%;
+        height: 500px;
+        /*让div内部文字居中*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+    }
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+    .title {
+        font-size: 12pt;
+    }
+    .description {
+        font-size: 10pt;
+    }
+}

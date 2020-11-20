@@ -1,0 +1,40 @@
+/*页脚*/
+
+.footer {
+    /*height 4rem*/
+    width: 100%;
+    text-align: center;
+    line-height: 4rem;
+    padding-top: 2em;
+    position: fixed;
+    bottom: 0px;
+}
+
+.footer a:hover {
+    color: #e58a8a;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+
+/*ICP备案*/
+
+#icp {
+    position: relative;
+    top: 30px;
+}
+
+#icp img {
+    padding: 0 4px;
+    vertical-align: text-bottom;
+}
+
+.copyright span {
+    color: rgb(255, 255, 255);
+}
+
+.copyright a {
+    color: rgb(255, 255, 255);
+}
